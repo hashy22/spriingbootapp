@@ -6,7 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Entity
+@Entity //FOR PERSISTING CUSTOMER IN DATABSE
 public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -22,6 +22,7 @@ public class Customer {
     public String getName() {
         return name;
         //return abc;
+       
     }
     public void setName(String name) {
         this.name = name;
